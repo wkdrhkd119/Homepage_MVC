@@ -48,8 +48,6 @@ function down(filename) {
 
 <select name="col"><%-- 검색할 컬럼 --%>
 
-	<c:if test="${col==wname}">selected='selected'</c:if>	
-
 	<option value="wname" 
 	<c:if test="${col==wname}">selected='selected'</c:if>	
 	>성명</option>
@@ -107,7 +105,7 @@ function down(filename) {
       <a href="javascript:read('${dto.bbsno}')" >${dto.title}</a>
 	
 	  <c:if test="${util:newImg(fn:substring(dto.wdate,0,10))}">     
-      <img src="${pageContext.request.contextPath}/images/new.gif">
+      <img src="${pageContext.request.contextPath}/views/bbs/storage/new.gif">
       </c:if>
       </TD>
       

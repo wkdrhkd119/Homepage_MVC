@@ -75,7 +75,7 @@ function blist() {
           <h4 class="modal-title">결과</h4>
         </div>
         <div class="modal-body">
-          <p>수정을 실패했습니다. 다시 시도해 주세요.</p>
+          <p>수정을 성공했습니다. 다시 시도해 주세요.</p>
         </div>
         <div class="modal-footer modal-button">
           <button type="button" class="btn btn-default" data-dismiss="modal" onclick="blist()">목록</button>
@@ -100,7 +100,7 @@ function blist() {
 	          <h4 class="modal-title">결과</h4>
 	        </div>
 	        <div class="modal-body">
-	          <p>수정을 성공했습니다.</p>
+	          <p>수정을 실패했습니다.</p>
 	        </div>
 	        <div class="modal-footer modal-button">
 	          <button type="button" class="btn btn-default" data-dismiss="modal" onclick="blist()">목록</button>

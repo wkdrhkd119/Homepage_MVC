@@ -26,7 +26,7 @@ location.href=url;
 
 function idown(fname) {
 	var url = "${pageContext.request.contextPath}/download";
-		url += "?dir=/images/storage";
+		url += "?dir=/views/images/storage";
 		url += "&filename=" + fname;
 		location.href = url
 	}
@@ -128,7 +128,7 @@ function idown(fname) {
         <c:choose>
         	<c:when test="${empty dto.fname}">파일없음</c:when>
         	<c:otherwise>
-        	<a href="javascript:down('${dto.fname}')">
+        	<a href="javascript:idown('${dto.fname}')">
         	<span class='glyphicon glyphicon-download-alt'></span>
         	</a>
         	</c:otherwise>

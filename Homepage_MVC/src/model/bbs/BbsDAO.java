@@ -223,7 +223,7 @@ public class BbsDAO {
 			pstmt.setString(++i, dto.getTitle());
 			pstmt.setString(++i, dto.getContent());
 			if(dto.getFilesize()>0){
-				pstmt.setInt(++i, dto.getBbsno());
+				pstmt.setString(++i, dto.getFilename());
 				pstmt.setInt(++i, dto.getFilesize());
 			}
 			pstmt.setInt(++i, dto.getBbsno());
